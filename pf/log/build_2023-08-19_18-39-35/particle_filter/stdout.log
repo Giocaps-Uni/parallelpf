@@ -1,0 +1,5 @@
+[ 25%] Built target uio_map
+[ 62%] Built target raymarching
+[35m[1mScanning dependencies of target pf_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/pf_node.dir/pf_node/src/pf_node.cpp.o[0m
+[ 87%] [32m[1mLinking CXX executable pf_node[0m

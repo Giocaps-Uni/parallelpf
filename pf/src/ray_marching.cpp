@@ -2,6 +2,7 @@
 #include "xrm.hpp"
 #include <cstring>
 #include <ctime>
+#include <omp.h>
 
 /**
  * Initializes all the parameters that are necessary for ray_marching class

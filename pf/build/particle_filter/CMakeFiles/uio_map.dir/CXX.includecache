@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../uio_map/include/uio_map.hpp
+stdint.h
+-
+
+/home/vboxuser/Documenti/Project/pf/uio_map/src/uio_map.cpp
+unistd.h
+-
+fcntl.h
+-
+sys/mman.h
+-
+stdio.h
+-
+cassert
+-
+iostream
+-
+uio_map.hpp
+/home/vboxuser/Documenti/Project/pf/uio_map/src/uio_map.hpp
+

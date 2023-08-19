@@ -1,0 +1,2 @@
+/usr/bin/ar qc libraymarching.a  CMakeFiles/raymarching.dir/src/ray_marching.cpp.o CMakeFiles/raymarching.dir/src/xrm.cpp.o
+/usr/bin/ranlib libraymarching.a

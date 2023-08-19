@@ -1,0 +1,13 @@
+[0.025s] Invoking command in '/home/vboxuser/Documenti/Project/pf/build/particle_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/Documenti/Project/pf/install/py_pubsub:/opt/ros/foxy /usr/bin/cmake --build /home/vboxuser/Documenti/Project/pf/build/particle_filter -- -j2 -l2
+[0.111s] [ 25%] Built target uio_map
+[0.138s] [ 62%] Built target raymarching
+[0.160s] [35m[1mScanning dependencies of target pf_node[0m
+[0.249s] [ 75%] [32mBuilding CXX object CMakeFiles/pf_node.dir/pf_node/src/pf_node.cpp.o[0m
+[13.878s] [ 87%] [32m[1mLinking CXX executable pf_node[0m
+[14.691s] /usr/bin/ld: CMakeFiles/pf_node.dir/pf_node/src/pf_node.cpp.o: in function `ParticleFilterNode::mapCb(std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >)':
+[14.691s] pf_node.cpp:(.text+0x166b): undefined reference to `omp_get_thread_num'
+[14.691s] collect2: error: ld returned 1 exit status
+[14.692s] make[2]: *** [CMakeFiles/pf_node.dir/build.make:244: pf_node] Error 1
+[14.696s] make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/pf_node.dir/all] Error 2
+[14.697s] make: *** [Makefile:141: all] Error 2
+[14.702s] Invoked command in '/home/vboxuser/Documenti/Project/pf/build/particle_filter' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/Documenti/Project/pf/install/py_pubsub:/opt/ros/foxy /usr/bin/cmake --build /home/vboxuser/Documenti/Project/pf/build/particle_filter -- -j2 -l2

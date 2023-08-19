@@ -56,6 +56,7 @@ void ParticleFilterNode::mapCb(const nav_msgs::msg::OccupancyGrid::SharedPtr map
     std::cout << "[INFO] precompute sensor model DONE" << std::endl;
     map_initialized = true;
     std::cout << "[INFO] Waiting for initial pose." << std::endl;
+    std::cout << omp_get_thread_num() << std::endl;
 }
 
 /**
