@@ -1,0 +1,3 @@
+[ 25%] Built target uio_map
+[35m[1mScanning dependencies of target raymarching[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/raymarching.dir/src/ray_marching.cpp.o[0m

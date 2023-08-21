@@ -1,0 +1,38 @@
+[01m[K/home/vboxuser/Documenti/Project/pf/src/ray_marching.cpp:[m[K In member function ‘[01m[Kvoid RayMarching::calculateWeights(Particle_t*, float*, float*, Map_t*, Cloud_t*, int, int)[m[K’:
+[01m[K/home/vboxuser/Documenti/Project/pf/src/ray_marching.cpp:207:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kchrono[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+  207 |     static std::[01;31m[Kchrono[m[K::steady_clock::time_point start, end;
+      |                 [01;31m[K^~~~~~[m[K
+[01m[K/home/vboxuser/Documenti/Project/pf/src/ray_marching.cpp:208:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart[m[K’ was not declared in this scope; did you mean ‘[01m[Kstat[m[K’?
+  208 |     [01;31m[Kstart[m[K = std::chrono::steady_clock::now();
+      |     [01;31m[K^~~~~[m[K
+      |     [32m[Kstat[m[K
+[01m[K/home/vboxuser/Documenti/Project/pf/src/ray_marching.cpp:208:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::chrono[m[K’ has not been declared
+  208 |     start = std::[01;31m[Kchrono[m[K::steady_clock::now();
+      |                  [01;31m[K^~~~~~[m[K
+[01m[K/home/vboxuser/Documenti/Project/pf/src/ray_marching.cpp:230:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kend[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::end[m[K’?
+  230 |     [01;31m[Kend[m[K = std::chrono::steady_clock::now();
+      |     [01;31m[K^~~[m[K
+      |     [32m[Kstd::end[m[K
+In file included from [01m[K/usr/include/c++/9/string:54[m[K,
+                 from [01m[K/usr/include/c++/9/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/9/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/9/ios:42[m[K,
+                 from [01m[K/usr/include/c++/9/istream:38[m[K,
+                 from [01m[K/usr/include/c++/9/fstream:38[m[K,
+                 from [01m[K/home/vboxuser/Documenti/Project/pf/include/ray_marching.hpp:4[m[K,
+                 from [01m[K/home/vboxuser/Documenti/Project/pf/src/ray_marching.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/range_access.h:107:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::end[m[K’ declared here
+  107 |   template<typename _Tp> const _Tp* [01;36m[Kend[m[K(const valarray<_Tp>&);
+      |                                     [01;36m[K^~~[m[K
+[01m[K/home/vboxuser/Documenti/Project/pf/src/ray_marching.cpp:230:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::chrono[m[K’ has not been declared
+  230 |     end = std::[01;31m[Kchrono[m[K::steady_clock::now();
+      |                [01;31m[K^~~~~~[m[K
+[01m[K/home/vboxuser/Documenti/Project/pf/src/ray_marching.cpp:232:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::chrono[m[K’ has not been declared
+  232 |     std::[01;31m[Kchrono[m[K::duration_cast<std::chrono::microseconds>(end-start).count() << "us" <<
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/home/vboxuser/Documenti/Project/pf/src/ray_marching.cpp:232:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::chrono[m[K’ has not been declared
+  232 |     std::chrono::duration_cast<std::[01;31m[Kchrono[m[K::microseconds>(end-start).count() << "us" <<
+      |                                     [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/raymarching.dir/build.make:63: CMakeFiles/raymarching.dir/src/ray_marching.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/raymarching.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

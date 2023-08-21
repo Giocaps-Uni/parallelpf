@@ -56,7 +56,6 @@ void ParticleFilterNode::mapCb(const nav_msgs::msg::OccupancyGrid::SharedPtr map
     std::cout << "[INFO] precompute sensor model DONE" << std::endl;
     map_initialized = true;
     std::cout << "[INFO] Waiting for initial pose." << std::endl;
-    std::cout << omp_get_thread_num() << std::endl;
 }
 
 /**
@@ -176,9 +175,9 @@ void ParticleFilterNode::lidarCb(const sensor_msgs::msg::LaserScan::SharedPtr ms
         scan[j++] = 0.0f;
     }
     end = std::chrono::steady_clock::now();
-    // std::cout << "downsample time: " <<
-    // std::chrono::duration_cast<std::chrono::microseconds>(end-start).count() << "us" <<
-    // std::endl;
+    //std::cout << "downsample time: " <<
+    //std::chrono::duration_cast<std::chrono::microseconds>(end-start).count() << "us" <<
+    //std::endl;
 
     // lidar_initialized = true;
     update(msg->header.stamp);
@@ -186,10 +185,9 @@ void ParticleFilterNode::lidarCb(const sensor_msgs::msg::LaserScan::SharedPtr ms
     end = std::chrono::steady_clock::now();
 
     downsampled_msg.ranges = ranges;
-    lidar_pub->publish(downsampled_msg);
-    // std::cout << "loop time: " <<
-    // std::chrono::duration_cast<std::chrono::microseconds>(end-start).count() << "us" <<
-    // std::endl;
+    //lidar_pub->publish(downsampled_msg);
+    //std::cout << "loop time: " <<
+    //std::chrono::duration_cast<std::chrono::microseconds>(end-start).count() << "us" << std::endl;
 }
 
 /**

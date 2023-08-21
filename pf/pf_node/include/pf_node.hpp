@@ -13,7 +13,6 @@
 #include <tf2_ros/transform_broadcaster.h>
 #include <tf2_ros/transform_listener.h>
 #include <time.h>
-#include <omp.h>
 
 class ParticleFilterNode
 {

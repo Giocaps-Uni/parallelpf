@@ -1,0 +1,7 @@
+[01m[K/home/vboxuser/Documenti/Project/pf/pf_node/src/pf_node.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::lidarCb(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/vboxuser/Documenti/Project/pf/pf_node/src/pf_node.cpp:180:14:[m[K [01;31m[Kerror: [m[Kstatement cannot resolve address of overloaded function
+  180 |     std::endl[01;31m[K;[m[K
+      |              [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/pf_node.dir/build.make:63: CMakeFiles/pf_node.dir/pf_node/src/pf_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/pf_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

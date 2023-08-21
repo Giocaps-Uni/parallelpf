@@ -5,6 +5,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
+#include <chrono>
 #include <time.h>
 #include <yaml-cpp/yaml.h>
 #ifdef TKCUDA_ENABLED

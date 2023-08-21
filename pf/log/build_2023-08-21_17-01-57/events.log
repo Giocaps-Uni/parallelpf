@@ -1,0 +1,102 @@
+[0.000000] (-) TimerEvent: {}
+[0.001997] (particle_filter) JobQueued: {'identifier': 'particle_filter', 'dependencies': OrderedDict()}
+[0.002064] (particle_filter) JobStarted: {'identifier': 'particle_filter'}
+[0.016572] (particle_filter) JobProgress: {'identifier': 'particle_filter', 'progress': 'cmake'}
+[0.016821] (particle_filter) JobProgress: {'identifier': 'particle_filter', 'progress': 'build'}
+[0.016871] (particle_filter) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vboxuser/Documenti/Project/pf/build/particle_filter', '--', '-j2', '-l2'], 'cwd': '/home/vboxuser/Documenti/Project/pf/build/particle_filter', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vboxuser'), ('SSH_AGENT_PID', '1412'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/vboxuser'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1239'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0940491c4ceb8bfbad6476e464e36047'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'vboxuser'), ('JOURNAL_STREAM', '8:34797'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu:@/tmp/.ICE-unix/1459,unix/Ubuntu:/tmp/.ICE-unix/1459'), ('INVOCATION_ID', '91f5f868d9d14f628c9dcda2eda4f124'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/854c36d2_f11b_4dfa_88ff_59dab25efbf5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/Documenti/Project/pf/build/particle_filter'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0940491c4ceb8bfbad6476e464e36047'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[0.085919] (particle_filter) StdoutLine: {'line': b'[ 25%] Built target uio_map\n'}
+[0.096680] (particle_filter) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target raymarching\x1b[0m\n'}
+[0.098985] (-) TimerEvent: {}
+[0.115253] (particle_filter) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/raymarching.dir/src/ray_marching.cpp.o\x1b[0m\n'}
+[0.199171] (-) TimerEvent: {}
+[0.299582] (-) TimerEvent: {}
+[0.400109] (-) TimerEvent: {}
+[0.500565] (-) TimerEvent: {}
+[0.601034] (-) TimerEvent: {}
+[0.701528] (-) TimerEvent: {}
+[0.802201] (-) TimerEvent: {}
+[0.805193] (particle_filter) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libraymarching.a\x1b[0m\n'}
+[0.848663] (particle_filter) StdoutLine: {'line': b'[ 62%] Built target raymarching\n'}
+[0.867687] (particle_filter) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pf_node\x1b[0m\n'}
+[0.918298] (particle_filter) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/pf_node.dir/src/particle_filter.cpp.o\x1b[0m\n'}
+[0.918504] (-) TimerEvent: {}
+[1.019730] (-) TimerEvent: {}
+[1.120171] (-) TimerEvent: {}
+[1.220637] (-) TimerEvent: {}
+[1.322259] (-) TimerEvent: {}
+[1.429048] (-) TimerEvent: {}
+[1.536341] (-) TimerEvent: {}
+[1.636835] (-) TimerEvent: {}
+[1.737348] (-) TimerEvent: {}
+[1.839158] (-) TimerEvent: {}
+[1.941705] (-) TimerEvent: {}
+[2.042322] (-) TimerEvent: {}
+[2.142729] (-) TimerEvent: {}
+[2.244302] (-) TimerEvent: {}
+[2.344816] (-) TimerEvent: {}
+[2.445626] (-) TimerEvent: {}
+[2.546011] (-) TimerEvent: {}
+[2.646510] (-) TimerEvent: {}
+[2.746935] (-) TimerEvent: {}
+[2.847389] (-) TimerEvent: {}
+[2.947872] (-) TimerEvent: {}
+[3.048351] (-) TimerEvent: {}
+[3.148856] (-) TimerEvent: {}
+[3.249475] (-) TimerEvent: {}
+[3.350065] (-) TimerEvent: {}
+[3.465373] (-) TimerEvent: {}
+[3.567047] (-) TimerEvent: {}
+[3.667478] (-) TimerEvent: {}
+[3.767908] (-) TimerEvent: {}
+[3.882271] (-) TimerEvent: {}
+[3.982705] (-) TimerEvent: {}
+[4.083166] (-) TimerEvent: {}
+[4.185833] (-) TimerEvent: {}
+[4.286293] (-) TimerEvent: {}
+[4.395618] (-) TimerEvent: {}
+[4.497052] (-) TimerEvent: {}
+[4.597611] (-) TimerEvent: {}
+[4.698139] (-) TimerEvent: {}
+[4.799573] (-) TimerEvent: {}
+[4.824682] (particle_filter) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable pf_node\x1b[0m\n'}
+[4.900918] (-) TimerEvent: {}
+[5.001729] (-) TimerEvent: {}
+[5.102661] (-) TimerEvent: {}
+[5.207206] (-) TimerEvent: {}
+[5.307594] (-) TimerEvent: {}
+[5.421694] (-) TimerEvent: {}
+[5.522069] (-) TimerEvent: {}
+[5.622506] (-) TimerEvent: {}
+[5.657861] (particle_filter) StdoutLine: {'line': b'[100%] Built target pf_node\n'}
+[5.669825] (particle_filter) CommandEnded: {'returncode': 0}
+[5.718722] (particle_filter) JobProgress: {'identifier': 'particle_filter', 'progress': 'install'}
+[5.722721] (-) TimerEvent: {}
+[5.731267] (particle_filter) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vboxuser/Documenti/Project/pf/build/particle_filter'], 'cwd': '/home/vboxuser/Documenti/Project/pf/build/particle_filter', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vboxuser'), ('SSH_AGENT_PID', '1412'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/vboxuser'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1239'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0940491c4ceb8bfbad6476e464e36047'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'vboxuser'), ('JOURNAL_STREAM', '8:34797'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu:@/tmp/.ICE-unix/1459,unix/Ubuntu:/tmp/.ICE-unix/1459'), ('INVOCATION_ID', '91f5f868d9d14f628c9dcda2eda4f124'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/854c36d2_f11b_4dfa_88ff_59dab25efbf5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/Documenti/Project/pf/build/particle_filter'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0940491c4ceb8bfbad6476e464e36047'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[5.749971] (particle_filter) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.750274] (particle_filter) StdoutLine: {'line': b'-- Installing: /home/vboxuser/Documenti/Project/pf/install/particle_filter/lib/particle_filter/pf_node\n'}
+[5.754702] (particle_filter) StdoutLine: {'line': b'-- Set runtime path of "/home/vboxuser/Documenti/Project/pf/install/particle_filter/lib/particle_filter/pf_node" to ""\n'}
+[5.754954] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/launch\n'}
+[5.755042] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/launch/demo_particlelaunch.xml\n'}
+[5.755219] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/launch/particle.launch.xml\n'}
+[5.755308] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/launch/particle.launch.py\n'}
+[5.755388] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/conf\n'}
+[5.755511] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/conf/particle.yaml\n'}
+[5.755599] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/ament_index/resource_index/package_run_dependencies/particle_filter\n'}
+[5.755678] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/ament_index/resource_index/parent_prefix_path/particle_filter\n'}
+[5.755755] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/environment/ament_prefix_path.sh\n'}
+[5.755884] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/environment/ament_prefix_path.dsv\n'}
+[5.755977] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/environment/path.sh\n'}
+[5.756090] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/environment/path.dsv\n'}
+[5.756210] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/local_setup.bash\n'}
+[5.756338] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/local_setup.sh\n'}
+[5.756463] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/local_setup.zsh\n'}
+[5.756587] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/local_setup.dsv\n'}
+[5.756696] (particle_filter) StdoutLine: {'line': b'-- Installing: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/package.dsv\n'}
+[5.756912] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/ament_index/resource_index/packages/particle_filter\n'}
+[5.757031] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/cmake/particle_filterConfig.cmake\n'}
+[5.757146] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/cmake/particle_filterConfig-version.cmake\n'}
+[5.757268] (particle_filter) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/package.xml\n'}
+[5.759253] (particle_filter) CommandEnded: {'returncode': 0}
+[5.823346] (-) TimerEvent: {}
+[5.826512] (particle_filter) JobEnded: {'identifier': 'particle_filter', 'rc': 0}
+[5.827217] (-) EventReactorShutdown: {}

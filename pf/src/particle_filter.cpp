@@ -142,7 +142,7 @@ void ParticleFilter::initialize_particles_pose(std::vector<float> p)
     std::normal_distribution<float> dist_y(0.0f, 0.02f);
     std::normal_distribution<float> dist_yaw(0.0f, 0.02f);
 
-    std::cout << "x = " << p[0] << " y= " << p[1] << "yaw = " << p[2] << std::endl;
+    std::cout << "x = " << p[0] << " y= " << p[1] << " yaw = " << p[2] << std::endl;
     firstMM = true;
 
     for (int i = 0; i < MAX_PARTICLES; i++) {
@@ -193,7 +193,7 @@ void ParticleFilter::precompute_sensor_model()
 
 /**
  * Resample the distribution of the particles at each istant
- *  with a unfiorm distribution
+ *  with a uniform distribution
  */
 std::vector<Particle_t> ParticleFilter::resample(unsigned int n_particles)
 {
@@ -294,11 +294,14 @@ void ParticleFilter::motion_model(float velocity, float dts, float yaw_rate)
  **/
 void ParticleFilter::sensor_model(std::vector<float> obs, std::vector<float> rays_angle)
 {
-
+    
+    
     Particle_t* particles_d = &particles[0];
     // float* obs_d = &obs[0];
     // float* sensor_model_table_d = &sensor_model_table[0];
-
+    
+    
+    
     if (useFPGA) {
         rayMarching.calculateRaysFPGA(
           particles_d, distanceMap, &map, &cloud, n_valid_particles_, &rays_angle[0]);
@@ -320,6 +323,8 @@ void ParticleFilter::sensor_model(std::vector<float> obs, std::vector<float> ray
         particles[i].weight = particles_d[i].weight;
         weights[i] = particles_d[i].weight;
     }
+    
+    
 }
 
 /**

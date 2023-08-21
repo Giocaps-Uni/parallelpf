@@ -204,6 +204,8 @@ void RayMarching::calculateWeights(Particle_t* particles,
                                    int n_particles)
 {
 
+    
+    
     for (int i = 0; i < n_particles; i++) {
         double weight_temp = 1.0f;
         for (int j = 0; j < N_RAYS_DS; j++) { // TODO: substitute N_RAYS_DS with real number of rays
@@ -224,4 +226,5 @@ void RayMarching::calculateWeights(Particle_t* particles,
 
         particles[i].weight = weight_temp;
     }
+
 }
