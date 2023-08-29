@@ -1,4 +1,0 @@
-Invoking command in '/home/vboxuser/Documenti/Project/pf/build/particle_filter': /usr/bin/cmake --build /home/vboxuser/Documenti/Project/pf/build/particle_filter -- -j2 -l2
-Invoked command in '/home/vboxuser/Documenti/Project/pf/build/particle_filter' returned '0': /usr/bin/cmake --build /home/vboxuser/Documenti/Project/pf/build/particle_filter -- -j2 -l2
-Invoking command in '/home/vboxuser/Documenti/Project/pf/build/particle_filter': /usr/bin/cmake --install /home/vboxuser/Documenti/Project/pf/build/particle_filter
-Invoked command in '/home/vboxuser/Documenti/Project/pf/build/particle_filter' returned '0': /usr/bin/cmake --install /home/vboxuser/Documenti/Project/pf/build/particle_filter

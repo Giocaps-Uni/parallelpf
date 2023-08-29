@@ -1,6 +1,0 @@
-/usr/bin/ld: CMakeFiles/pf_node.dir/pf_node/src/pf_node.cpp.o: in function `ParticleFilterNode::mapCb(std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >)':
-pf_node.cpp:(.text+0x166b): undefined reference to `omp_get_thread_num'
-collect2: error: ld returned 1 exit status
-make[2]: *** [CMakeFiles/pf_node.dir/build.make:244: pf_node] Error 1
-make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/pf_node.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

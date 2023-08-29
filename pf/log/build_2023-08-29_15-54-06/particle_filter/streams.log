@@ -1,0 +1,30 @@
+[0.013s] Invoking command in '/home/vboxuser/Documenti/Project/pf/build/particle_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/Documenti/Project/pf/install/py_pubsub:/opt/ros/foxy /usr/bin/cmake --build /home/vboxuser/Documenti/Project/pf/build/particle_filter -- -j2 -l2
+[0.066s] [ 25%] Built target uio_map
+[0.082s] [ 62%] Built target raymarching
+[0.121s] [100%] Built target pf_node
+[0.133s] Invoked command in '/home/vboxuser/Documenti/Project/pf/build/particle_filter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/Documenti/Project/pf/install/py_pubsub:/opt/ros/foxy /usr/bin/cmake --build /home/vboxuser/Documenti/Project/pf/build/particle_filter -- -j2 -l2
+[0.179s] Invoking command in '/home/vboxuser/Documenti/Project/pf/build/particle_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/Documenti/Project/pf/install/py_pubsub:/opt/ros/foxy /usr/bin/cmake --install /home/vboxuser/Documenti/Project/pf/build/particle_filter
+[0.188s] -- Install configuration: ""
+[0.188s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/lib/particle_filter/pf_node
+[0.188s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/launch
+[0.188s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/launch/demo_particlelaunch.xml
+[0.188s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/launch/particle.launch.xml
+[0.188s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/launch/particle.launch.py
+[0.189s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/conf
+[0.189s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/conf/particle.yaml
+[0.189s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/ament_index/resource_index/package_run_dependencies/particle_filter
+[0.189s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/ament_index/resource_index/parent_prefix_path/particle_filter
+[0.189s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/environment/ament_prefix_path.sh
+[0.189s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/environment/ament_prefix_path.dsv
+[0.189s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/environment/path.sh
+[0.189s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/environment/path.dsv
+[0.189s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/local_setup.bash
+[0.189s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/local_setup.sh
+[0.189s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/local_setup.zsh
+[0.189s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/local_setup.dsv
+[0.189s] -- Installing: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/package.dsv
+[0.190s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/ament_index/resource_index/packages/particle_filter
+[0.190s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/cmake/particle_filterConfig.cmake
+[0.190s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/cmake/particle_filterConfig-version.cmake
+[0.190s] -- Up-to-date: /home/vboxuser/Documenti/Project/pf/install/particle_filter/share/particle_filter/package.xml
+[0.192s] Invoked command in '/home/vboxuser/Documenti/Project/pf/build/particle_filter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/Documenti/Project/pf/install/py_pubsub:/opt/ros/foxy /usr/bin/cmake --install /home/vboxuser/Documenti/Project/pf/build/particle_filter

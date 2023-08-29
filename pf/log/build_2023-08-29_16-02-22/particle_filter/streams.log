@@ -1,0 +1,12 @@
+[0.013s] Invoking command in '/home/vboxuser/Documenti/Project/pf/build/particle_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/Documenti/Project/pf/install/py_pubsub:/opt/ros/foxy /usr/bin/cmake --build /home/vboxuser/Documenti/Project/pf/build/particle_filter -- -j2 -l2
+[0.064s] [ 25%] Built target uio_map
+[0.086s] [ 62%] Built target raymarching
+[0.098s] [35m[1mScanning dependencies of target pf_node[0m
+[0.165s] [ 75%] [32mBuilding CXX object CMakeFiles/pf_node.dir/pf_node/src/pf_node.cpp.o[0m
+[2.064s] [01m[K/home/vboxuser/Documenti/Project/pf/pf_node/src/pf_node.cpp:325:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kdiomerda[m[K’ does not name a type
+[2.064s]   325 | [01;31m[Kdiomerda[m[K
+[2.064s]       | [01;31m[K^~~~~~~~[m[K
+[4.774s] make[2]: *** [CMakeFiles/pf_node.dir/build.make:63: CMakeFiles/pf_node.dir/pf_node/src/pf_node.cpp.o] Error 1
+[4.774s] make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/pf_node.dir/all] Error 2
+[4.774s] make: *** [Makefile:141: all] Error 2
+[4.779s] Invoked command in '/home/vboxuser/Documenti/Project/pf/build/particle_filter' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/Documenti/Project/pf/install/py_pubsub:/opt/ros/foxy /usr/bin/cmake --build /home/vboxuser/Documenti/Project/pf/build/particle_filter -- -j2 -l2

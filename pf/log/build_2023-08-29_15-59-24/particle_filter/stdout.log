@@ -1,0 +1,6 @@
+-- No CUDA support
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring incomplete, errors occurred!
+See also "/home/vboxuser/Documenti/Project/pf/build/particle_filter/CMakeFiles/CMakeOutput.log".
+See also "/home/vboxuser/Documenti/Project/pf/build/particle_filter/CMakeFiles/CMakeError.log".

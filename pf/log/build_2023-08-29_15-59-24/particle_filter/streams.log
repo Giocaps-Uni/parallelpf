@@ -1,0 +1,25 @@
+[0.010s] Invoking command in '/home/vboxuser/Documenti/Project/pf/build/particle_filter': /usr/bin/cmake --build /home/vboxuser/Documenti/Project/pf/build/particle_filter -- -j2 -l2
+[0.031s] -- No CUDA support
+[0.031s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.046s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.151s] Traceback (most recent call last):
+[0.151s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[0.151s]     from ament_package.templates import get_environment_hook_template_path
+[0.151s] ModuleNotFoundError: No module named 'ament_package'
+[0.167s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[0.167s]   execute_process(/usr/bin/python3
+[0.167s]   /opt/ros/foxy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[0.167s]   /home/vboxuser/Documenti/Project/pf/build/particle_filter/ament_cmake_package_templates/templates.cmake)
+[0.167s]   returned error code 1
+[0.167s] Call Stack (most recent call first):
+[0.167s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.167s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.167s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.167s]   CMakeLists.txt:20 (find_package)
+[0.167s] 
+[0.167s] 
+[0.167s] -- Configuring incomplete, errors occurred!
+[0.167s] See also "/home/vboxuser/Documenti/Project/pf/build/particle_filter/CMakeFiles/CMakeOutput.log".
+[0.167s] See also "/home/vboxuser/Documenti/Project/pf/build/particle_filter/CMakeFiles/CMakeError.log".
+[0.168s] make: *** [Makefile:414: cmake_check_build_system] Error 1
+[0.171s] Invoked command in '/home/vboxuser/Documenti/Project/pf/build/particle_filter' returned '2': /usr/bin/cmake --build /home/vboxuser/Documenti/Project/pf/build/particle_filter -- -j2 -l2
