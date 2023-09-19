@@ -61,6 +61,7 @@ void RayMarching::calculateRays(Particle_t* particles,
                                 float* rays_angle)
 {
     double angle, rayPoseX, rayPoseY, distance;
+    // TODO Parallelizing only inner loop (for now)
     for (int i = 0; i < n_particles; i++) {
         for (int j = 0; j < N_RAYS_DS; ++j) {
             float angle = (particles[i].yaw + cloud->angleMin) + rays_angle[j];
@@ -68,6 +69,8 @@ void RayMarching::calculateRays(Particle_t* particles,
             rayPoseY = particles[i].y;
             float t = 0.0f;
             float out = cloud->maxRange;
+
+            // Each parallel thread executes this while loop
             while (t < cloud->maxRayIteration) {
                 int c = (int)((map->opp_originX - rayPoseX) / map->map_resolution);
                 int r = (int)((map->opp_originY + rayPoseY) / map->map_resolution);
@@ -77,14 +80,17 @@ void RayMarching::calculateRays(Particle_t* particles,
                     break;
                 }
 
+                // Race condition!!! Shared Vars (critical section/atomic)
                 distance = distMap[r * map->map_width + c];
                 rayPoseX += distance * std::cos(angle);
                 rayPoseY += distance * std::sin(angle);
+
 
                 if (distance <= map->map_resolution) {
                     float xd = rayPoseX - particles[i].x;
                     float yd = rayPoseY - particles[i].y;
                     out = sqrtf(xd * xd + yd * yd);
+
                     break;
                 }
 
@@ -204,8 +210,8 @@ void RayMarching::calculateWeights(Particle_t* particles,
                                    int n_particles)
 {
 
-    
-    
+
+
     for (int i = 0; i < n_particles; i++) {
         double weight_temp = 1.0f;
         for (int j = 0; j < N_RAYS_DS; j++) { // TODO: substitute N_RAYS_DS with real number of rays
