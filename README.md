@@ -1,6 +1,10 @@
-# parallelpf
+Parallel Particle Filter with OpenMP
 
-Progetto particle filter parallelo con OpenMp
+-> OpenMp parallelization on the host cpu
 
-Analisi tempo di esecuzione delle funzioni effettuata con gprof
+-> Code built using colcon, version controlo with git on openmp branch
 
+-> Dependencies: OpenMP package (added on CMakeLists.txt)
+
+-> Application profiled with gprof (options -pg in CMakeLists.txt)
+  -> gmon.out gets saved in the bag folder
