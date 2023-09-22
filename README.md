@@ -9,6 +9,8 @@ Parallel Particle Filter with OpenMP
 -> Application profiled with gprof (options -pg in CMakeLists.txt)
   -> gmon.out gets saved in the bag folder
 
+N_RAYS_DS (60) -> 2 Cores 30 / 30
+
 Functions running (relatively) slow: (from gmon analysis)
 % time     n seconds
 61.86      0.60     0.60     1020     0.59     0.65  RayMarching::calculateRays(Particle_t*, float*, Map_t*, Cloud_t*, int, float*)
