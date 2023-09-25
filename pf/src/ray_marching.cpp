@@ -62,7 +62,10 @@ void RayMarching::calculateRays(Particle_t* particles,
 {
     double angle, rayPoseX, rayPoseY, distance;
     // TODO Parallelizing only inner loop (for now)
+    #pragma omp parallel num_threads(2)
+    {
     for (int i = 0; i < n_particles; i++) {
+        #pragma omp for private(rayPoseX, rayPoseY, distance) schedule(static)
         for (int j = 0; j < N_RAYS_DS; ++j) {
             float angle = (particles[i].yaw + cloud->angleMin) + rays_angle[j];
             rayPoseX = particles[i].x;
@@ -80,7 +83,6 @@ void RayMarching::calculateRays(Particle_t* particles,
                     break;
                 }
 
-                // Race condition!!! Shared Vars (critical section/atomic)
                 distance = distMap[r * map->map_width + c];
                 rayPoseX += distance * std::cos(angle);
                 rayPoseY += distance * std::sin(angle);
@@ -99,7 +101,9 @@ void RayMarching::calculateRays(Particle_t* particles,
 
             particles[i].rays[j] = out;
         }
+
     }
+  }
 }
 
 void RayMarching::calculateRaysFPGA(Particle_t* particles,
