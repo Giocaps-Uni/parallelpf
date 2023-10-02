@@ -1,0 +1,31 @@
+[ 25%] Built target uio_map
+[35m[1mScanning dependencies of target raymarching[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/raymarching.dir/src/ray_marching.cpp.o[0m
+[ 50%] [32m[1mLinking CXX static library libraymarching.a[0m
+[ 62%] Built target raymarching
+[ 75%] [32m[1mLinking CXX executable pf_node[0m
+[100%] Built target pf_node
+-- Install configuration: ""
+-- Installing: /home/vboxuser/Documenti/Project/install/particle_filter/lib/particle_filter/pf_node
+-- Set runtime path of "/home/vboxuser/Documenti/Project/install/particle_filter/lib/particle_filter/pf_node" to ""
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/launch
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/launch/demo_particlelaunch.xml
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/launch/particle.launch.xml
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/launch/particle.launch.py
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/conf
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/conf/particle.yaml
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/ament_index/resource_index/package_run_dependencies/particle_filter
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/ament_index/resource_index/parent_prefix_path/particle_filter
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/environment/ament_prefix_path.sh
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/environment/path.sh
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/environment/path.dsv
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/local_setup.bash
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/local_setup.sh
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/local_setup.zsh
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/local_setup.dsv
+-- Installing: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/package.dsv
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/ament_index/resource_index/packages/particle_filter
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/cmake/particle_filterConfig.cmake
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/cmake/particle_filterConfig-version.cmake
+-- Up-to-date: /home/vboxuser/Documenti/Project/install/particle_filter/share/particle_filter/package.xml

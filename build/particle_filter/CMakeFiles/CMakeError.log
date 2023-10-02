@@ -1,0 +1,72 @@
+Looking for a CUDA compiler failed with the following output:
+-- The CUDA compiler identification is unknown
+CMake Error at CMakeLists.txt:2 (project):
+  No CMAKE_CUDA_COMPILER could be found.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "CUDACXX" or the CMake cache entry CMAKE_CUDA_COMPILER to the full
+  path to the compiler, or to the compiler name if it is in the PATH.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/vboxuser/Documenti/Project/build/particle_filter/CMakeFiles/CheckCUDA/CMakeFiles/CMakeOutput.log".
+See also "/home/vboxuser/Documenti/Project/build/particle_filter/CMakeFiles/CheckCUDA/CMakeFiles/CMakeError.log".
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/vboxuser/Documenti/Project/build/particle_filter/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_30cea/fast && /usr/bin/make -f CMakeFiles/cmTC_30cea.dir/build.make CMakeFiles/cmTC_30cea.dir/build
+make[1]: Entering directory '/home/vboxuser/Documenti/Project/build/particle_filter/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_30cea.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_30cea.dir/src.cxx.o -c /home/vboxuser/Documenti/Project/build/particle_filter/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_30cea
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30cea.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_30cea.dir/src.cxx.o  -o cmTC_30cea 
+/usr/bin/ld: CMakeFiles/cmTC_30cea.dir/src.cxx.o: in function `main':
+src.cxx:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.cxx:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.cxx:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_30cea.dir/build.make:87: cmTC_30cea] Error 1
+make[1]: Leaving directory '/home/vboxuser/Documenti/Project/build/particle_filter/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_30cea/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/vboxuser/Documenti/Project/build/particle_filter/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fba37/fast && /usr/bin/make -f CMakeFiles/cmTC_fba37.dir/build.make CMakeFiles/cmTC_fba37.dir/build
+make[1]: Entering directory '/home/vboxuser/Documenti/Project/build/particle_filter/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fba37.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_fba37.dir/CheckFunctionExists.cxx.o -c /home/vboxuser/Documenti/Project/build/particle_filter/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_fba37
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fba37.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_fba37.dir/CheckFunctionExists.cxx.o  -o cmTC_fba37  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_fba37.dir/build.make:87: cmTC_fba37] Error 1
+make[1]: Leaving directory '/home/vboxuser/Documenti/Project/build/particle_filter/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_fba37/fast] Error 2
+
+
+

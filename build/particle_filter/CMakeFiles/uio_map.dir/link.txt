@@ -1,0 +1,2 @@
+/usr/bin/ar qc libuio_map.a  CMakeFiles/uio_map.dir/uio_map/src/uio_map.cpp.o
+/usr/bin/ranlib libuio_map.a
