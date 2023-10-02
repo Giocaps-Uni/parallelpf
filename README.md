@@ -2,18 +2,39 @@ Parallel Particle Filter with OpenMP
 
 -> OpenMp parallelization on the host cpu
 
--> Code built using colcon, version controlo with git on openmp branch
+-> Code built using colcon, version control with git on openmp branch
 
--> Dependencies: OpenMP package (added on CMakeLists.txt)
+-> Dependencies: OpenMP package [added in CMakeLists.txt]
 
--> Application profiled with gprof (options -pg in CMakeLists.txt)
-  -> gmon.out gets saved in the bag folder
+-> Application can be profiled with gprof [added option -pg in CMakeLists.txt]
+  -> gmon.out saved in the bag folder [demo_pf/]
 
-N_RAYS_DS (60) -> 2 Cores 30 / 30
 
-Functions running (relatively) slow: (from gmon analysis)
-% time     n seconds
-61.86      0.60     0.60     1020     0.59     0.65  RayMarching::calculateRays(Particle_t*, float*, Map_t*, Cloud_t*, int, float*)
-  6.19      0.66     0.06     1020     0.06     0.11  RayMarching::calculateWeights(Particle_t*, float*, float*, Map_t*, Cloud_t*, int, int)
+To run, in the pf folder run (for every terminal):
 
-64.87      0.48     0.48        1   480.01   509.63  _GLOBAL__sub_I__ZN11RayMarching4initEbb
+# source /opt/ros/foxy/setup.bash
+# source install/setup.bash
+
+in one terminal, launch rviz2:
+
+# rviz2
+
+in another terminal, launch the node using:
+
+# ros2 launch particle_filter demo_particlelaunch.xml
+
+in another terminal launch the bag play using:
+
+# ros2 bag play rosbag2_2023_05_19-15_38_30/
+
+In rviz2, add the map, odometry & posearray (by topic)
+
+--------------------------------------------------------
+
+To profile the application with gprof, run a bag play. When the recording has
+finished, close the node, go in the demo_pf/ folder and run
+
+# gprof ../build/particle_filter/pf_node gmon.out > analysis.txt
+
+This command gets hooked to the application "pf_node" (the executable of the
+node) and writes results on the file "analysis.txt"
