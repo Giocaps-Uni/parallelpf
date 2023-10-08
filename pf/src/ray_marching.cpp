@@ -4,7 +4,7 @@
 #include <ctime>
 #include <omp.h>
 
-#define NUM_THREADS 4
+#define NUM_THREADS 8
 
 /**
  * Initializes all the parameters that are necessary for ray_marching class
@@ -67,7 +67,7 @@ void RayMarching::calculateRays(Particle_t* particles,
     std::cout << n_particles << std::endl;
     #pragma omp parallel num_threads(NUM_THREADS)
     {
-    #pragma omp for private(rayPoseX, rayPoseY, distance) schedule(static, 8) collapse(2)
+    #pragma omp for private(rayPoseX, rayPoseY, distance) schedule(static, 1) collapse(2)
     for (int i = 0; i < n_particles; i++) {
         for (int j = 0; j < N_RAYS_DS; ++j) {
             float angle = (particles[i].yaw + cloud->angleMin) + rays_angle[j];
