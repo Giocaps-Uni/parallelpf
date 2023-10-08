@@ -64,10 +64,10 @@ void RayMarching::calculateRays(Particle_t* particles,
 {
     double angle, rayPoseX, rayPoseY, distance;
 
-    #pragma omp parallel num_threads(NUM_THREADS)
+    #pragma omp parallel num_threads(NUM_THREADS) shared(particles)
     {
     for (int i = 0; i < n_particles; i++) {
-        #pragma omp for private(rayPoseX, rayPoseY, distance) schedule(static, 1)
+        #pragma omp for private(rayPoseX, rayPoseY, distance) schedule(static)
         for (int j = 0; j < N_RAYS_DS; ++j) {
             float angle = (particles[i].yaw + cloud->angleMin) + rays_angle[j];
             rayPoseX = particles[i].x;
@@ -101,7 +101,10 @@ void RayMarching::calculateRays(Particle_t* particles,
                 t += fmaxf(distance * 0.999f, 1.0);
             }
 
+            #pragma omp critical
+            {
             particles[i].rays[j] = out;
+            }
         }
 
     }
