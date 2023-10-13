@@ -1,0 +1,10 @@
+[ 25%] Built target uio_map
+[35m[1mScanning dependencies of target raymarching[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/raymarching.dir/src/ray_marching.cpp.o[0m
+[01m[K/home/vboxuser/Documenti/Project/pf/src/ray_marching.cpp:[m[K In member function ‘[01m[Kvoid RayMarching::calculateRays(Particle_t*, float*, Map_t*, Cloud_t*, int, float*)[m[K’:
+[01m[K/home/vboxuser/Documenti/Project/pf/src/ray_marching.cpp:71:5:[m[K [01;31m[Kerror: [m[Kfor statement expected before ‘[01m[Kdouble[m[K’
+   71 |     [01;31m[Kdouble[m[K angle, rayPoseX, rayPoseY, distance;
+      |     [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/raymarching.dir/build.make:63: CMakeFiles/raymarching.dir/src/ray_marching.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/raymarching.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -6,6 +6,7 @@
 
 #define NUM_THREADS 4
 
+
 /**
  * Initializes all the parameters that are necessary for ray_marching class
  */
@@ -64,10 +65,11 @@ void RayMarching::calculateRays(Particle_t* particles,
 {
     double angle, rayPoseX, rayPoseY, distance;
     int ch_sz = n_particles/NUM_THREADS;
+    double wtime_start = omp_get_wtime();
     //std::cout << n_particles << std::endl;
     #pragma omp parallel num_threads(NUM_THREADS)
     {
-    #pragma omp for private(rayPoseX, rayPoseY, distance) schedule(static, ch_sz)
+    #pragma omp for private(rayPoseX, rayPoseY, distance) schedule(static, 4)
     for (int i = 0; i < n_particles; i++) {
         for (int j = 0; j < N_RAYS_DS; ++j) {
             float angle = (particles[i].yaw + cloud->angleMin) + rays_angle[j];
@@ -108,6 +110,10 @@ void RayMarching::calculateRays(Particle_t* particles,
 
     }
   }
+  double wtime_end = omp_get_wtime();
+  double wtime = wtime_end-wtime_start;
+  std::cout << wtime << std::endl;
+
 }
 
 void RayMarching::calculateRaysFPGA(Particle_t* particles,

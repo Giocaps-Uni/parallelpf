@@ -1,0 +1,12 @@
+[0.023s] Invoking command in '/home/vboxuser/Documenti/Project/build/particle_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/Documenti/Project/pf/install/py_pubsub:/opt/ros/foxy /usr/bin/cmake --build /home/vboxuser/Documenti/Project/build/particle_filter -- -j4 -l4
+[0.106s] [ 25%] Built target uio_map
+[0.141s] [35m[1mScanning dependencies of target raymarching[0m
+[0.158s] [ 37%] [32mBuilding CXX object CMakeFiles/raymarching.dir/src/ray_marching.cpp.o[0m
+[0.791s] [01m[K/home/vboxuser/Documenti/Project/pf/src/ray_marching.cpp:[m[K In member function ‘[01m[Kvoid RayMarching::calculateRays(Particle_t*, float*, Map_t*, Cloud_t*, int, float*)[m[K’:
+[0.791s] [01m[K/home/vboxuser/Documenti/Project/pf/src/ray_marching.cpp:71:5:[m[K [01;31m[Kerror: [m[Kfor statement expected before ‘[01m[Kdouble[m[K’
+[0.791s]    71 |     [01;31m[Kdouble[m[K angle, rayPoseX, rayPoseY, distance;
+[0.791s]       |     [01;31m[K^~~~~~[m[K
+[0.911s] make[2]: *** [CMakeFiles/raymarching.dir/build.make:63: CMakeFiles/raymarching.dir/src/ray_marching.cpp.o] Error 1
+[0.911s] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/raymarching.dir/all] Error 2
+[0.911s] make: *** [Makefile:141: all] Error 2
+[0.914s] Invoked command in '/home/vboxuser/Documenti/Project/build/particle_filter' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/Documenti/Project/pf/install/py_pubsub:/opt/ros/foxy /usr/bin/cmake --build /home/vboxuser/Documenti/Project/build/particle_filter -- -j4 -l4
